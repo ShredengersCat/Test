@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.neko {
+    color: #343434;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+.team {
+    color: #343434;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+}
+ul.hr {
+    margin: 0;
+    padding: 4px;
+}
+ul.hr li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+ul.hr a {
+    color: black;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.wrapper {
+    background-color: lightgray;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+.content {
+    flex: 1 1 auto;
+}
+.footer-row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text {
+    color: #445162;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.block {
+}
+.block-row {
+    display:flex;
+}
+.block-element {
+}
+.block-element-1 {
+    flex: 0 0 200px;
+}
+.block-element-2 {
+    flex: 1 1 auto;
+}
+.block-content {
+}
+.displayed {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    33% {transform: rotate(120deg); background-color: blue}
+    66%{transform: rotate(240deg);background-color: green}
+    100%{transform: rotate(360deg);}
+}
